@@ -32,15 +32,7 @@ public class MainActivity extends AppCompatActivity {
                         // your action here
                         Toast.makeText(MainActivity.this, "Right", Toast.LENGTH_SHORT).show();
                         return true;
-                    }else if(event.getRawX() >= (ett.getLeft() - ett.getCompoundDrawables()[DRAWABLE_LEFT].getBounds().width())) {
-                        // your action here
-                        Toast.makeText(MainActivity.this, "Right", Toast.LENGTH_SHORT).show();
-                        return true;
-                    }else if(event.getRawX() >= (ett.getTop() - ett.getCompoundDrawables()[DRAWABLE_TOP].getBounds().width())) {
-                        // your action here
-                        Toast.makeText(MainActivity.this, "Right", Toast.LENGTH_SHORT).show();
-                        return true;
-                    }else if(event.getRawX() >= (ett.getBottom() - ett.getCompoundDrawables()[DRAWABLE_BOTTOM].getBounds().width())) {
+                    }else if(event.getRawX() <= ett.getCompoundDrawables()[DRAWABLE_LEFT].getBounds().width()) {
                         // your action here
                         Toast.makeText(MainActivity.this, "Right", Toast.LENGTH_SHORT).show();
                         return true;
